@@ -1,55 +1,69 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Version change: undefined → 1.0.0
+List of modified principles:
+- [PROJECT_NAME] → Educational book on Physical AI & Humanoid Robotics
+- [PRINCIPLE_1_NAME] → Accuracy through verification
+- [PRINCIPLE_1_DESCRIPTION] → Verification against established robotics frameworks and tools (e.g., ROS 2, Gazebo, NVIDIA Isaac)
+- [PRINCIPLE_2_NAME] → Clarity for student audience
+- [PRINCIPLE_2_DESCRIPTION] → Computer science or engineering background, assuming introductory AI knowledge
+- [PRINCIPLE_3_NAME] → Reproducibility
+- [PRINCIPLE_3_DESCRIPTION] → All code examples, simulations, and hardware setups must be executable and traceable
+- [PRINCIPLE_4_NAME] → Rigor
+- [PRINCIPLE_4_DESCRIPTION] → Prefer official documentation, tutorials, and industry-standard practices
+- [SECTION_2_NAME] → Key Standards
+- [SECTION_2_CONTENT] → All technical claims must be traceable to sources (e.g., official ROS docs, NVIDIA developer resources)
+Citation format: Markdown links or inline references to URLs/docs
+Source types: minimum 50% official documentation and open-source repositories
+Plagiarism check: 0% tolerance; all content must be original synthesis
+Writing clarity: Flesch-Kincaid grade 8-10 for accessibility
+- [SECTION_3_NAME] → Constraints
+- [SECTION_3_CONTENT] → Word count: Flexible per chapter, total book 10,000-20,000 words
+Minimum 10 sources per module
+Added sections:
+Removed sections:
+- [PRINCIPLE_5_NAME]
+- [PRINCIPLE_5_DESCRIPTION]
+- [PRINCIPLE_6_NAME]
+- [PRINCIPLE__DESCRIPTION]
+Templates requiring updates:
+- .specify/templates/plan-template.md ⚠ pending
+- .specify/templates/spec-template.md ⚠ pending
+- .specify/templates/tasks-template.md ⚠ pending
+- .specify/templates/commands/*.md ⚠ pending
+Follow-up TODOs:
+- TODO(GOVERNANCE_RULES): explanation
+-->
+# Educational book on Physical AI & Humanoid Robotics Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Accuracy through verification
+Verification against established robotics frameworks and tools (e.g., ROS 2, Gazebo, NVIDIA Isaac)
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Clarity for student audience
+Computer science or engineering background, assuming introductory AI knowledge
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Reproducibility
+All code examples, simulations, and hardware setups must be executable and traceable
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Rigor
+Prefer official documentation, tutorials, and industry-standard practices
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+## Key Standards
 
-### [PRINCIPLE_6_NAME]
+All technical claims must be traceable to sources (e.g., official ROS docs, NVIDIA developer resources)
+Citation format: Markdown links or inline references to URLs/docs
+Source types: minimum 50% official documentation and open-source repositories
+Plagiarism check: 0% tolerance; all content must be original synthesis
+Writing clarity: Flesch-Kincaid grade 8-10 for accessibility
 
+## Constraints
 
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+Word count: Flexible per chapter, total book 10,000-20,000 words
+Minimum 10 sources per module
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+TODO(GOVERNANCE_RULES): The governance rules need to be defined. This should include amendment procedures, versioning policy, and compliance review expectations.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-04 | **Last Amended**: 2025-12-04

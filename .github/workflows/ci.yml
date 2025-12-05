@@ -1,0 +1,46 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - 001-physical-ai-robotics-book
+  pull_request:
+    branches:
+      - main
+      - 001-physical-ai-robotics-book
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Docusaurus dependencies
+        run: npm install
+
+      - name: Build Docusaurus site
+        run: npm run build
+
+      - name: Docker & NVIDIA Container Toolkit setup (Placeholder)
+        run: |
+          echo "Setting up Docker and NVIDIA Container Toolkit for ROS 2 and simulation environment."
+          echo "This step would involve installing Docker, nvidia-container-toolkit, and potentially building a custom docker-ros image."
+          # Example: docker pull osrf/ros:iron-desktop-full
+          # Example: docker run --rm --gpus all osrf/ros:iron-desktop-full ros2 doctor
+
+      - name: Code block validation (Placeholder)
+        run: echo "Code block validation would occur here, potentially running ROS 2 commands or simulation tests inside a Docker container."
+
+      - name: Check for dead links
+        uses: lycheeverse/lychee-action@v1.8.0
+        with:
+          # Optionally, you can specify directories to scan
+          args: --base-url "${{ github.server_url }}/${{ github.repository }}" --verbose .
+
